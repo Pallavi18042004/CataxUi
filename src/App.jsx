@@ -1,7 +1,14 @@
-export default function App() {
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-pink-400 flex item-center justify-center">
-      Hello world!
-    </h1>
-  )
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
+  );
 }
+
+export default App;
+ 
