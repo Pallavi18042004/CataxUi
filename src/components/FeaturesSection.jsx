@@ -13,6 +13,7 @@ const Feature = () => {
                     <div className=""><MdOutlineCheck /></div>
                 </div>
                 <div className=" text-[#A64D79] text-[14px] mt-4 font-medium  ">2000+ Integrations</div>
+                <div>hgfhg</div>
             </div>
         </div>
 
