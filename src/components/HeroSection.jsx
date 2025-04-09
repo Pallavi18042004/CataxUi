@@ -26,7 +26,7 @@ const HeroSection = () => {
         <img
           src={catex}
           alt="image of india"
-          className="w-full h-auto object-cover max-w-[1440px] mx-auto "
+          className="w-full h-auto object-cover max-w-[1440px] mx-auto opacity-40 "
         />
       </div>
     </section>
