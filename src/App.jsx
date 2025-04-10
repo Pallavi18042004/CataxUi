@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Footer from "./components/footer";
 import MediaSection from "./components/MediaSection";
 import Feature from "./components/FeaturesSection";
+import About from "./components/About";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <MediaSection />
       <Feature />
+      {/* <About /> */}
       <Footer />
 
     </>
