@@ -5,6 +5,8 @@ import MediaSection from "./components/MediaSection";
 import Feature from "./components/FeaturesSection";
 import StepsSection from "./components/StepsSection";
 import ReportSection from "./components/ReportSection";
+import CuratedSection from "./components/CuratedSection";
+import AuroraHeading from "./components/AuroraHeading";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Feature />
       <StepsSection/>
       <ReportSection/>
+      <CuratedSection/>
+      < AuroraHeading/>
       <Footer />
 
     </>
