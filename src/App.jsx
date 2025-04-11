@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import MediaSection from "./components/MediaSection";
 import Feature from "./components/FeaturesSection";
 import StepsSection from "./components/StepsSection";
+import ReportSection from "./components/ReportSection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MediaSection />
       <Feature />
       <StepsSection/>
+      <ReportSection/>
       <Footer />
 
     </>
