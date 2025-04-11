@@ -40,21 +40,24 @@ const CuratedSection = () => {
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {data.map((item, index) => (
-          <Link to={item.link} key={index}>
-            <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between hover:scale-105 cursor-pointer">
-              <div className="text-2xl flex justify-center items-center text-pink-400 mb-4">
-                {item.icon}
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {item.title}
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-              <div className="text-right text-gray-500 text-xl">→</div>
-            </div>
-          </Link>
-        ))}
+  {data.map((item, index) => (
+    <Link to={item.link} key={index} className="h-full">
+      <div className="bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between hover:scale-105 cursor-pointer h-full">
+        <div>
+          <div className="text-2xl flex justify-center items-center text-pink-400 mb-4">
+            {item.icon}
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            {item.title}
+          </h3>
+          <p className="text-gray-600 text-sm mb-4">{item.description}</p>
+        </div>
+        <div className="text-right text-gray-500 text-xl">→</div>
       </div>
+    </Link>
+  ))}
+</div>
+
     </section>
   );
 };
