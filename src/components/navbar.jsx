@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
    
           <ul className="flex space-x-6 mr-14">
-            <li><a href="#home" className="text-[#A64D79] border-b-2  pb-1">Home</a></li>
+            <li><a href="#home" className="text-[#A64D79]   pb-1">Home</a></li>
             <li><a href="#about" className="text-gray-700 hover:text-[#A64D79]">About</a></li>
             <li><a href="#integration" className="text-gray-700 hover:text-[#A64D79]">Integration</a></li>
             <li><a href="#calculate" className="text-gray-700 hover:text-[#A64D79]">Calculate</a></li>

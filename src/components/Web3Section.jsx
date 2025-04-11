@@ -24,17 +24,17 @@ const Web3Section = () => {
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
        
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {leftButtons.map((text, index) => (
-            <button
-              key={index}
-              className="flex items-center py-4 px-5 bg-white text-gray-800 rounded-full shadow border hover:shadow-md transition-all"
-            >
-              <FaPython className="text-2xl mr-3" />
-              <span className="transition-all">{text}</span>
-            </button>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  {leftButtons.map((text, index) => (
+    <button
+      key={index}
+      className="flex items-center py-4 px-5 bg-white text-gray-800 rounded-full shadow border hover:shadow-md transition-all"
+    >
+      <FaPython className="text-2xl mr-3" />
+      <span>{text}</span>
+    </button>
+  ))}
+</div>
 
         
         <div className="max-w-md text-center md:text-left">
