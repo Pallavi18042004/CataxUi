@@ -7,6 +7,7 @@ import StepsSection from "./components/StepsSection";
 import ReportSection from "./components/ReportSection";
 import CuratedSection from "./components/CuratedSection";
 import AuroraHeading from "./components/AuroraHeading";
+import Web3Section from "./components/Web3Section";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <StepsSection/>
       <ReportSection/>
       <CuratedSection/>
+      <Web3Section/>
       < AuroraHeading/>
       <Footer />
 
