@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/footer";
@@ -9,21 +11,60 @@ import CuratedSection from "./components/CuratedSection";
 import AuroraHeading from "./components/AuroraHeading";
 import Web3Section from "./components/Web3Section";
 
+import IndividualsPage from "./pages/IndividualsPage";
+import EnterprisesPage from "./pages/EnterprisesPage";
+import AccountantsPage from "./pages/AccountantsPage";
+
 function App() {
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <MediaSection />
-      <Feature />
-      <StepsSection/>
-      <ReportSection/>
-      <CuratedSection/>
-      <Web3Section/>
-      < AuroraHeading/>
-      <Footer />
+    <Router>
+      <Routes>
 
-    </>
+      
+        <Route path="/" element={
+          <>
+            <Navbar />
+            <HeroSection />
+            <MediaSection />
+            <Feature />
+            <StepsSection />
+            <ReportSection />
+            <CuratedSection />
+            <Web3Section />
+            <AuroraHeading />
+            <Footer />
+          </>
+        } />
+
+       
+        <Route path="/individuals" element={
+          <>
+            <Navbar />
+            <IndividualsPage />
+          
+          </>
+        } />
+
+       
+        <Route path="/enterprises" element={
+          <>
+            <Navbar />
+            <EnterprisesPage />
+         
+          </>
+        } />
+
+     
+        <Route path="/accountants" element={
+          <>
+            <Navbar />
+            <AccountantsPage />
+       
+          </>
+        } />
+        
+      </Routes>
+    </Router>
   );
 }
 
