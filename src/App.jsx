@@ -12,7 +12,7 @@ function App() {
       <HeroSection />
       <MediaSection />
       <Feature />
-      {/* <About /> */}
+      <About />
       <Footer />
 
     </>

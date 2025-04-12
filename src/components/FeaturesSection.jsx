@@ -29,6 +29,7 @@ const Feature = () => {
                         <div className="text-[#A64D79] text-sm font-medium">{feature}</div>
                     </div>
                 ))}
+                {/* sknxknx */}
             </div>
         </div>
 
