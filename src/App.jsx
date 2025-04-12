@@ -15,6 +15,7 @@ import ReportSection from "./components/ReportSection";
 import IndividualsPage from "./pages/IndividualsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import AccountantsPage from "./pages/AccountantsPage";
+import PartnershipSection from "./components/PartnershipSection";
 
 
 
@@ -39,6 +40,7 @@ function App() {
             <Web3Section />
             <AuroraHeading />
             <Testimonials />
+            <PartnershipSection />
             <Footer />
           </>
         } />
