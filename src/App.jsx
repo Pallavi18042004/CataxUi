@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import MediaSection from "./components/MediaSection";
 import Feature from "./components/FeaturesSection";
 import StepsSection from "./components/StepsSection";
-
+import About from "./components/About";
 import CuratedSection from "./components/CuratedSection";
 import AuroraHeading from "./components/AuroraHeading";
 import Web3Section from "./components/Web3Section";
@@ -14,7 +14,7 @@ import ReportSection from "./components/ReportSection";
 import IndividualsPage from "./pages/IndividualsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import AccountantsPage from "./pages/AccountantsPage";
-import About from "./components/About";
+
 
 function App() {
   return (
@@ -28,12 +28,12 @@ function App() {
             <HeroSection />
             <MediaSection />
             <Feature />
+            <About />
             <StepsSection />
             <ReportSection />
             <CuratedSection />
             <Web3Section />
             <AuroraHeading />
-            <About />
             <Footer />
           </>
         } />
