@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import MediaSection from "./components/MediaSection";
 import Feature from "./components/FeaturesSection";
 import StepsSection from "./components/StepsSection";
-
+import About from "./components/About";
 import CuratedSection from "./components/CuratedSection";
 import AuroraHeading from "./components/AuroraHeading";
 import Web3Section from "./components/Web3Section";
@@ -15,20 +15,22 @@ import IndividualsPage from "./pages/IndividualsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import AccountantsPage from "./pages/AccountantsPage";
 
+
 function App() {
   return (
     <Router>
       <Routes>
 
-      
+
         <Route path="/" element={
           <>
             <Navbar />
             <HeroSection />
             <MediaSection />
             <Feature />
+            <About />
             <StepsSection />
-            <ReportSection/>
+            <ReportSection />
             <CuratedSection />
             <Web3Section />
             <AuroraHeading />
@@ -36,33 +38,33 @@ function App() {
           </>
         } />
 
-       
+
         <Route path="/individuals" element={
           <>
             <Navbar />
             <IndividualsPage />
-          
+
           </>
         } />
 
-       
+
         <Route path="/enterprises" element={
           <>
             <Navbar />
             <EnterprisesPage />
-         
+
           </>
         } />
 
-     
+
         <Route path="/accountants" element={
           <>
             <Navbar />
             <AccountantsPage />
-       
+
           </>
         } />
-        
+
       </Routes>
     </Router>
   );
