@@ -52,7 +52,7 @@ const StepsSection = () => {
                   className="relative flex flex-col cursor-pointer group"
                 >
                   <div
-                    className={`flex items-center space-x-2 font-medium text-xl ${
+                    className={`flex items-center space-x-2 font-medium text-lg ${
                       activeStep === index
                         ? "text-[#A64D79]"
                         : "text-gray-700"

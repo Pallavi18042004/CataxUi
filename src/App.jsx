@@ -15,6 +15,7 @@ import IndividualsPage from "./pages/IndividualsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import AccountantsPage from "./pages/AccountantsPage";
 import PartnershipSection from "./components/PartnershipSection";
+import GetStartedSection from "./components/GetStartedSection";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
         <Route path="/" element={
           <>
+          <div className="bg-gradient-to-r from-[#FED8D8] to-white">
             <Navbar />
             <HeroSection />
             <MediaSection />
@@ -36,7 +38,9 @@ function App() {
             <Web3Section />
             <AuroraHeading />
             <PartnershipSection/>
+            <GetStartedSection/>
             <Footer />
+            </div>
           </>
         } />
 
