@@ -9,11 +9,15 @@ import StepsSection from "./components/StepsSection";
 import About from "./components/About";
 import CuratedSection from "./components/CuratedSection";
 import AuroraHeading from "./components/AuroraHeading";
+import Testimonials from "./components/Testimonials";
 import Web3Section from "./components/Web3Section";
 import ReportSection from "./components/ReportSection";
 import IndividualsPage from "./pages/IndividualsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import AccountantsPage from "./pages/AccountantsPage";
+
+
+
 
 
 function App() {
@@ -34,6 +38,7 @@ function App() {
             <CuratedSection />
             <Web3Section />
             <AuroraHeading />
+            <Testimonials />
             <Footer />
           </>
         } />
