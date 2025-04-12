@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 
 const stepsData = [
     {
-      label: " 1. Connect Exchange",
+      label: " 1. Select exchange/wallet",
       videoUrl: "https://www.youtube.com/shorts/l2De8fn0lSI",
     },
     {
@@ -30,13 +30,13 @@ const StepsSection = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="bg-[#FED8D88C] py-16 px-4 font-poppins">
+    <section className="bg-gradient-to-r from-[#FED8D8] to-white py-16 px-4 font-poppins">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-semibold text-black">
+          <h2 className="text-3xl md:text-5xl font-semibold text-black">
             Steps to Calculate Taxes
           </h2>
-          <p className="text-gray-600 mt-4 max-w-md mx-auto text-sm font-normal">
+          <p className="text-gray-600 mt-8 max-w-md mx-auto text-base font-normal">
             In just four simple steps, get your crypto tax report ready.
             Connect, upload, review, and download in minutes!
           </p>
@@ -52,7 +52,7 @@ const StepsSection = () => {
                   className="relative flex flex-col cursor-pointer group"
                 >
                   <div
-                    className={`flex items-center space-x-2 font-medium ${
+                    className={`flex items-center space-x-2 font-medium text-xl ${
                       activeStep === index
                         ? "text-[#A64D79]"
                         : "text-gray-700"
@@ -63,8 +63,8 @@ const StepsSection = () => {
                   </div>
 
                   <span
-                    className={`h-[2px] bg-[#A64D79] inline-block transition-all duration-300 absolute bottom-0 left-0 ${
-                      activeStep === index ? "w-[60%]" : "w-0"
+                    className={`h-[2px] bg-[#383838] inline-block transition-all duration-300 absolute bottom-0 left-0 ${
+                      activeStep === index ? "w-[65%] " : "w-0"
                     }`}
                   ></span>
                 </div>
@@ -79,7 +79,7 @@ const StepsSection = () => {
           </div>
 
           <div className="flex-1">
-            <div className="border border-[#A64D79] rounded-md w-[520px] h-[400px] aspect-video flex items-center justify-center">
+            <div className="border border-[#A64D79] rounded-md w-[616px] h-[400px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)] ">
               {stepsData[activeStep].videoUrl.includes("youtube") ? (
                 <iframe
                   key={stepsData[activeStep].videoUrl}
