@@ -1,6 +1,6 @@
 const Footer = () => {
     return (<>
-        < div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 md:w-[800px] mt-10 gap-5 mx-auto px-5 sm:px-0" >
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 md:w-[800px] gap-5 mx-auto px-5 sm:px-0" >
             <div className="column1_container flex flex-col gap-y-4">
                 <div className="font-semibold cursor-pointer">Company</div>
                 <div className="cursor cursor-pointer">About</div>

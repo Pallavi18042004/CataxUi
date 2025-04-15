@@ -1,29 +1,29 @@
 import React from "react";
-import catex from "../assets/catex.png"; 
+import catex from "/assets/catex.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const HeroSection = () => {
   return (
     <section className="bg-white text-center py-16 px-4 relative overflow-hidden">
-      
+
       <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-8">
         Come. Calculate. Chill.
       </h1>
 
-     
+
       <p className="text-gray-600 text-lg md:text-xl max-w-xl mx-auto mb-10 font-semibold">
         Get a tax-ready report in just 3 clicks! Accurate, reliable, and built for Indian crypto tax laws.
       </p>
 
-     
+
       <div className="relative w-full mt-14">
-       
+
         <button className="absolute left-1/2 -top-6 transform -translate-x-1/2 bg-[#A64D79] text-white px-11 py-4 rounded-full text-lg font-semibold transition flex items-center shadow-lg z-10">
           Calculate Now
           <span className="ml-2 text-3xl"> <IoIosArrowRoundForward size={29} /></span>
         </button>
 
-        
+
         <img
           src={catex}
           alt="image of india"

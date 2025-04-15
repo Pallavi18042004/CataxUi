@@ -16,4 +16,4 @@ const GetStartedSection = () => {
   );
 };
 
-export default GetStartedSection;git 
+export default GetStartedSection;
