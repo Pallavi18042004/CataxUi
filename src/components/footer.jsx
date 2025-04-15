@@ -1,6 +1,6 @@
 const Footer = () => {
     return (<>
-        < div className="main_container flex flex-row gap-x-48 ml-60 h-full" >
+        < div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 md:w-[800px] mt-10 gap-5 mx-auto px-5 sm:px-0" >
             <div className="column1_container flex flex-col gap-y-4">
                 <div className="font-semibold cursor-pointer">Company</div>
                 <div className="cursor cursor-pointer">About</div>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="cursor-pointer">Help Center</div>
             </div>
         </div >
-        <div className="ml-56 mt-12">
+        <div className="ml-4 sm:ml-4 md:ml-4 lg:ml-24 xl:ml-64 mx-auto mt-12">
             <span className="cursor-pointer">Start your free trial</span>
             <span className="cursor-pointer w-12 h-6 p-2 bg-red-600 ml-10 rounded-md text-white font-bold">Sign up free</span>
         </div>
