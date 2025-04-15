@@ -16,6 +16,7 @@ import IndividualsPage from "./pages/IndividualsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import AccountantsPage from "./pages/AccountantsPage";
 import PartnershipSection from "./components/PartnershipSection";
+import Available from "./components/Available";
 
 
 
@@ -41,6 +42,7 @@ function App() {
             <AuroraHeading />
             <Testimonials />
             <PartnershipSection />
+            <Available />
             <Footer />
           </>
         } />
