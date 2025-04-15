@@ -1,4 +1,4 @@
-import pdficon from "../assets/pdficon.svg";
+import pdficon from "/assets/pdficon.svg";
 
 const reports = [
   "Terms & Conditions",
@@ -18,17 +18,17 @@ const ReportSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 md:gap-6 mb-6">
-  {reports.map((report, index) => (
-    <button
-      key={index}
-      className="flex items-center justify-between px-4 py-3 w-[243px] h-[54px]  bg-gradient-to-r from-[#DCECFF] to-[#FFFFFF]
+          {reports.map((report, index) => (
+            <button
+              key={index}
+              className="flex items-center justify-between px-4 py-3 w-[243px] h-[54px]  bg-gradient-to-r from-[#DCECFF] to-[#FFFFFF]
                  text-sm sm:text-base text-gray-800 rounded-md transition-all border border-gray-300 "
-    >
-      {report}
-      <img src={pdficon} alt="PDF" className="w-5 h-5 ml-2" />
-    </button>
-  ))}
-</div>
+            >
+              {report}
+              <img src={pdficon} alt="PDF" className="w-5 h-5 ml-2" />
+            </button>
+          ))}
+        </div>
 
       </div>
     </section>

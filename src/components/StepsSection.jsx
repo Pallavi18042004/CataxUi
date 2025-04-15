@@ -3,24 +3,24 @@ import React, { useState } from 'react';
 
 
 const stepsData = [
-    {
-      label: " 1. Select exchange/wallet",
-      videoUrl: "https://www.youtube.com/shorts/l2De8fn0lSI",
-    },
-    {
-      label: " 2. Upload Data",
-      videoUrl: "https://www.youtube.com/shorts/7PZnoUzL8BQ",
-    },
-    {
-      label: "3. Review Transactions",
-      videoUrl: "https://www.youtube.com/shorts/U_Kcc4AZgL4",
-    },
-    {
-      label: "4. Download Report",
-      videoUrl: "https://www.youtube.com/shorts/ooP23-jgCYY",
-    },
-  ];
-  
+  {
+    label: " 1. Select exchange/wallet",
+    videoUrl: "https://www.youtube.com/shorts/l2De8fn0lSI",
+  },
+  {
+    label: " 2. Upload Data",
+    videoUrl: "https://www.youtube.com/shorts/7PZnoUzL8BQ",
+  },
+  {
+    label: "3. Review Transactions",
+    videoUrl: "https://www.youtube.com/shorts/U_Kcc4AZgL4",
+  },
+  {
+    label: "4. Download Report",
+    videoUrl: "https://www.youtube.com/shorts/ooP23-jgCYY",
+  },
+];
+
 
 const StepsSection = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -48,20 +48,18 @@ const StepsSection = () => {
                   className="relative flex flex-col cursor-pointer group"
                 >
                   <div
-                    className={`flex items-center space-x-2 font-medium text-lg ${
-                      activeStep === index
+                    className={`flex items-center space-x-2 font-medium text-lg ${activeStep === index
                         ? "text-[#A64D79]"
                         : "text-gray-700"
-                    }`}
+                      }`}
                   >
                     {activeStep === index && <FaArrowRight />}
                     <span>{step.label}</span>
                   </div>
 
                   <span
-                    className={`h-[2px] bg-[#383838] inline-block transition-all duration-300 absolute bottom-0 left-0 ${
-                      activeStep === index ? "w-[65%] " : "w-0"
-                    }`}
+                    className={`h-[2px] bg-[#383838] inline-block transition-all duration-300 absolute bottom-0 left-0 ${activeStep === index ? "w-[65%] " : "w-0"
+                      }`}
                   ></span>
                 </div>
               ))}
