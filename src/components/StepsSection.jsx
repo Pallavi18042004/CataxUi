@@ -77,37 +77,36 @@ const StepsSection = () => {
           </div>
 
           <div className="flex-1">
-            <div className="border border-[#A64D79] rounded-md w-[616px] h-[400px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)] ">
-              {stepsData[activeStep].videoUrl.includes("youtube") ? (
-                <iframe
-                  key={stepsData[activeStep].videoUrl}
-                  width="100%"
-                  height="100%"
-                  className="rounded-md"
-                  src={stepsData[activeStep].videoUrl.replace(
-                    "/shorts/",
-                    "/embed/"
-                  )}
-                  title="YouTube video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              ) : (
-                <video
-                  key={stepsData[activeStep].videoUrl}
-                  controls
-                  autoPlay
-                  className="w-[697px] h-[376px] object-cover rounded-md"
-                >
-                  <source
-                    src={stepsData[activeStep].videoUrl}
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-              )}
-            </div>
+  <div className="border border-[#A64D79] rounded-md w-full sm:w-[616px] h-[auto] sm:h-[400px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)]">
+    {stepsData[activeStep].videoUrl.includes("youtube") ? (
+      <iframe
+        key={stepsData[activeStep].videoUrl}
+        width="100%"
+        height="100%"
+        className="rounded-md"
+        src={stepsData[activeStep].videoUrl.replace("/shorts/", "/embed/")}
+        title="YouTube video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    ) : (
+      <video
+        key={stepsData[activeStep].videoUrl}
+        controls
+        autoPlay
+        className="w-full h-auto object-cover rounded-md"
+      >
+        <source
+          src={stepsData[activeStep].videoUrl}
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    )}
+  </div>
+
+
           </div>
         </div>
       </div>
