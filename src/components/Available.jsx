@@ -1,53 +1,44 @@
 import React from 'react';
 
-const countries = [
-    { name: 'Italy', flag: '🇮🇹', image: '' },
-    { name: 'Italy', flag: '🇮🇹', image: '' },
-    { name: 'Singapore', flag: '🇸🇬', image: '' },
-    { name: 'Malaysia', flag: '🇲🇾', image: '' },
-    { name: 'Nether land', flag: '🇳🇱', image: '' },
-    { name: 'Poland', flag: '🇵🇱', image: '' },
-    { name: 'Australia', flag: '🇦🇺', image: '' },
-    { name: 'Nether land', flag: '🇳🇱', image: '' },
-    { name: 'Siberia', flag: '🇺🇿', image: '' },
-    { name: 'America', flag: '🇺🇸', image: '' },
-];
-
-const GridCard = ({ name, flag, image }) => (
-    <div className="rounded-xl overflow-hidden shadow-md w-[242px] h-[162px] sm:w-full sm:h-[200px] lg:h-[230px] bg-gray-300 relative">
-        {image && (
-            <img
-                src={image}
-                alt={name}
-                className="w-full h-full object-cover"
-            />
-        )}
-        <div className="absolute top-2 left-2 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-xs sm:text-sm font-medium flex items-center gap-1">
-            {name} <span>{flag}</span>
-        </div>
-    </div>
-);
 
 const Available = () => {
     return (
-        <div className="bg-white py-12 px-4">
-            {/* Header Section */}
-            <div className="text-center mb-10">
-                <h2 className="text-4xl font-bold">Now Available In</h2>
-                <p className="text-gray-600 mt-2 text-sm sm:text-base">
-                    Not just India anymore! Now available internationally. Catax supports crypto tax <br />
-                    calculations for a growing list of countries worldwide.
-                </p>
-            </div>
+        <>
+            <div className='flex flex-col gap-y-[50px] mt-[210px]'>
+                <div className='w-[40%] m-auto border flex flex-col gap-y-[px25] '>
+                    <h3 className='text-[32px] md:text-[48px] text-center pl-28 lg:text-4xl'>Now Available In</h3>
+                    <div className="flex flex-col items-center mt-4 text-center">
+                        <p className='text-[15px] text-[#383838]'>
+                            Not just India anymore! Now available internationally. Catax supports crypto tax
+                        </p>
+                        <p className='text-[15px] text-[#383838]'>
+                            calculations for a growing list of countries worldwide.
+                        </p>
+                    </div>
+                </div>
 
-            {/* Grid Section */}
-            <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-center">
-                {countries.map((country, idx) => (
-                    <GridCard key={idx} {...country} />
-                ))}
+                <div className='grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 items-center justify-center w-[90%] m-auto'>
+                    <div className='flex flex-col gap-y-[25px]'>
+                        <img className='w-[242px] border ' src="/assets/image1.png" alt="" />
+                        <img className='w-[242px] h-[216]' src="/assets/image2.png" alt="" />
+                    </div>
+                    <div className='flex flex-col gap-y-[25px]'>
+                        <img className='w-[242px] h-[324]' src="/assets/image3.png" alt="" />
+                        <img className='w-[242px] h-[324]' src="/assets/image4.png" alt="" />
+                        <img className='w-[242px] h-[324]' src="/assets/image5.png" alt="" />
+                    </div>
+                    <div className='flex flex-col gap-y-[25px]'>
+                        <img className='w-[242px] border ' src="/assets/image6.png" alt="" />
+                        <img className='w-[242px] h-[216]' src="/assets/image7.png" alt="" />
+                    </div>
+                    <div className='flex flex-col gap-y-[25px]'>
+                        <img className='w-[242px] h-[324]' src="/assets/image8.png" alt="" />
+                        <img className='w-[242px] h-[324]' src="/assets/image9.png" alt="" />
+                    </div>
+                </div>
             </div>
-        </div>
-    );
-};
+        </>
+    )
+}
 
 export default Available;

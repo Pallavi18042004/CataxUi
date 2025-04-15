@@ -58,8 +58,8 @@ const CuratedSection = () => {
                 <div className="text-2xl flex justify-center items-center text-pink-400 mb-4">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{item.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-lg mb-4">{item.description}</p>
               </div>
               <div className="flex justify-end mt-6 text-gray-600 text-2xl">
                 <IoIosArrowRoundForward />
