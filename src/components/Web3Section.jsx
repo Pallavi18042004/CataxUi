@@ -14,7 +14,7 @@ const Web3Section = () => {
   const secondHalf = leftButtons.slice(3);
 
   return (
-    <section className="bg-gradient-to-r from-pink-50 to-blue-50 py-20 px-6 font-sans h-screen">
+    <section className="bg-gradient-to-r from-pink-50 to-blue-50 py-7 sm:10 md:20 px-6 font-sans lg:h-screen">
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
           Trusted by leading web3 investors
@@ -28,16 +28,16 @@ const Web3Section = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         
    
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row   gap-4">
          
           <div className="grid grid-cols-1 gap-4">
             {firstHalf.map((text, index) => (
               <button
                 key={index}
-                className="flex items-center py-4 px-3 bg-white text-gray-800 rounded-full shadow border hover:shadow-md transition-all"
+                className="flex text-sm sm:text-base items-center py-2 px-3 bg-white text-gray-800 rounded-full shadow border hover:shadow-md transition-all"
               >
                 <FaPython className="text-2xl mr-3" />
-                <span>{text}</span>
+                <span >{text}</span>
               </button>
             ))}
           </div>
@@ -47,7 +47,7 @@ const Web3Section = () => {
             {secondHalf.map((text, index) => (
               <button
                 key={index + 3}
-                className="flex items-center py-3 px-5 bg-white text-gray-800 rounded-full shadow border hover:shadow-md transition-all"
+                className="flex text-sm sm:text-base items-center py-3 px-5 bg-white text-gray-800 rounded-full shadow border hover:shadow-md transition-all"
               >
                 <FaPython className="text-2xl mr-3" />
                 <span>{text}</span>
