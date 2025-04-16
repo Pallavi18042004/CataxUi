@@ -22,7 +22,7 @@ const ReportSection = () => {
             <button
               key={index}
               className="flex items-center justify-between px-4 py-3 w-[243px] h-[54px]  bg-gradient-to-r from-[#DCECFF] to-[#FFFFFF]
-                 text-sm sm:text-base text-gray-800 rounded-md transition-all border border-gray-300 "
+                 text-xs sm:text-base text-gray-800 rounded-md transition-all border border-gray-300 "
             >
               {report}
               <img src={pdficon} alt="PDF" className="w-5 h-5 ml-2" />
