@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const PartnershipSection = () => {
   return (
-    <section className="bg-gradient-to-r from-[#DCECFFCC] to-white py-20 px-6 text-center font-sans h-screen">
+    <section className="bg-gradient-to-r from-[#DCECFFCC] to-white py-20 px-6 text-center font-sans">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
           Partnership & Integrations
@@ -18,7 +18,7 @@ const PartnershipSection = () => {
               key={i}
               className="h-[90px] w-[177px]  rounded-full bg-white  border border-gray-300 flex items-center justify-center shadow"
             >
-              
+
             </div>
           ))}
         </div>

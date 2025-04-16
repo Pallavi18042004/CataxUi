@@ -26,10 +26,10 @@ const Web3Section = () => {
       </div>
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        
-   
+
+
         <div className="flex flex-col sm:flex-row gap-4">
-         
+
           <div className="grid grid-cols-1 gap-4">
             {firstHalf.map((text, index) => (
               <button
@@ -42,7 +42,7 @@ const Web3Section = () => {
             ))}
           </div>
 
-         
+
           <div className="grid grid-cols-1 gap-4">
             {secondHalf.map((text, index) => (
               <button
@@ -56,13 +56,13 @@ const Web3Section = () => {
           </div>
         </div>
 
-      
+
         <div className="max-w-md text-center md:text-left">
           <h3 className="text-3xl sm:text-4xl font-serif mb-4 text-black">
             Learn while you build
           </h3>
           <p className="text-gray-600 mb-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ipsa aspernatur 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ipsa aspernatur
             accusantium provident quos! Ducimus quas cumque similique minus doloremque
             numquam alias enim itaque.
           </p>
