@@ -40,7 +40,7 @@ const CuratedSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-[#FED8D8] to-white py-20 px-4 sm:px-10 font-poppins text-center">
+    <section className=" py-20 px-4 sm:px-10 font-poppins text-center">
       <h2 className="text-3xl sm:text-5xl font-bold text-black mb-10">
         Curated to cater everyone
       </h2>
@@ -50,20 +50,22 @@ const CuratedSection = () => {
         needs with precision and ease.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((item, index) => (
           <Link to={item.link} key={index} className="h-full group">
-            <div className="w-full h-[335px]   bg-white border border-pink-300 rounded-xl p-6 transition-colors duration-300 flex flex-col justify-between cursor-pointer group-hover:bg-gradient-to-tr group-hover:from-[#f4eeeeee] group-hover:to-white">
+           <div className="w-full h-[250px] sm:h-[285px] md:h-[335px] bg-white border border-pink-300 rounded-xl p-4 sm:p-6 transition-colors duration-300 flex flex-col justify-between cursor-pointer group-hover:bg-gradient-to-tr group-hover:from-[#f4eeeeee] group-hover:to-white">
+
               <div>
                 <div className="text-2xl flex justify-center items-center text-pink-400 mb-4">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-lg mb-4">{item.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-base sm:text-lg mb-4">{item.description}</p>
               </div>
-              <div className="flex justify-end mt-6 text-gray-600 text-2xl">
-                <IoIosArrowRoundForward />
-              </div>
+              <div className="w-full flex justify-end mt-auto text-gray-600">
+  <IoIosArrowRoundForward className="text-2xl sm:text-3xl md:text-4xl" />
+</div>
+
             </div>
           </Link>
         ))}

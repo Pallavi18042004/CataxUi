@@ -3,7 +3,7 @@ import { MdOutlineCheck } from "react-icons/md";
 const Feature2 = () => {
     return (
         <>
-            <div className="text-[48px] w-[415px] m-auto mt-[210px]">Our Exciting Feature</div>
+            <div className="text-[48px] w-[415px] m-auto mt-[100px]">Our Exciting Feature</div>
             <div className="mt-[54px] gap-y-[24px]">
                 <div className="flex w-full justify-center items-center gap-y-[24px] gap-x-[48px]">
                     <div className="flex pl-6 border-2 p-2 h-14 w-60 hover:shadow-md rounded-md items-center">

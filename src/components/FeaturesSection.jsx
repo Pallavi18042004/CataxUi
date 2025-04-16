@@ -7,8 +7,8 @@ import Feature2 from "./FeaturesSection2";
 const Feature = () => {
     return (<>
 
-        <div className="container mt-36 mx-auto  max-w-5xl px-4 lg:hidden">
-            <div className="heading text-[32px] md:text-[48px] text-center font-bold mb-12">
+        <div className="container mt-24 mx-auto  max-w-5xl px-4 lg:hidden">
+            <div className="heading text-[24px] md:text-[48px] text-center font-bold mb-12">
                 Our Exciting Features
             </div>
 

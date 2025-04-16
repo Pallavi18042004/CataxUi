@@ -4,9 +4,9 @@ import React from 'react';
 const Available = () => {
     return (
         <>
-            <div className='flex flex-col gap-y-[50px] mt-[210px]'>
-                <div className='w-[50%] m-auto flex flex-col gap-y-[px25] '>
-                    <h3 className='text-[32px] md:text-[48px] text-center pl-2 lg:text-4xl'>Now Available In</h3>
+            <div className='flex flex-col gap-y-[50px] mt-[150px]'>
+                <div className='w-[90%] sm:w-[50%] m-auto flex flex-col gap-y-[px25] '>
+                    <h3 className='text-[24px] md:text-[48px] text-center pl-2 lg:text-4xl'>Now Available In</h3>
                     <div className="flex flex-col items-center mt-4 text-center">
                         <p className='text-[15px] text-[#383838]'>
                             Not just India anymore! Now available internationally. Catax supports crypto tax

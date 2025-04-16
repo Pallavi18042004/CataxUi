@@ -26,7 +26,7 @@ const StepsSection = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="bg-gradient-to-r from-[#FED8D8] to-white py-16 px-4 font-poppins">
+    <section className=" py-16 px-4 font-poppins">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-xl sm:text-2xl md:text-5xl font-semibold text-black">
