@@ -2,7 +2,7 @@ import economictimes from "/assets/economictimes.png";
 import coindesk from "/assets/coindesk.png";
 import finanacialexpress from "/assets/finanacialexpress.png";
 import outlook from "/assets/outlook.png";
-import toi from "/assets/toi.png";
+
 
 
 const MediaSection = () => {
