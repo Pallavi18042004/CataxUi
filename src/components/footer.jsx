@@ -39,12 +39,12 @@ const Footer = () => {
                 </div>
             </div >
         </div>
-        <div className="flex lg:w-[60%] m-auto justify-between border mt-11 p-6 flex-col sm:flex-row md:flex-row lg:flex-row ">
+        <div className="flex lg:w-[60%] m-auto items-center justify-between border mt-11 p-6 flex-col sm:flex-row md:flex-row lg:flex-row ">
             <div className=" ">
-                <span className="cursor-pointer text-[15px]">Start your free trial</span>
-                <span className="cursor-pointer text-[15px] w-12 h-6 p-2 bg-red-600 ml-10 rounded-md text-white font-bold">Sign up free</span>
+                <span className="cursor-pointer text-[14px]">Start your free trial</span>
+                <span className="cursor-pointer text-[14px] w-12 h-6 p-2 bg-red-600 ml-10 rounded-md text-white font-bold">Sign up free</span>
             </div>
-            <div className="flex pl-6 gap-x-5 text-[#9CA3AF]">
+            <div className="flex  gap-x-5 border mt-4 text-center text-[#9CA3AF]">
                 <a href=""><FaFacebookF size={18} /></a>
                 <a href=""><FaDiscord size={18} /></a>
                 <a href=""><FaLinkedinIn size={18} /></a>
