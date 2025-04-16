@@ -5,8 +5,8 @@ const Available = () => {
     return (
         <>
             <div className='flex flex-col gap-y-[50px] mt-[210px]'>
-                <div className='w-[40%] m-auto border flex flex-col gap-y-[px25] '>
-                    <h3 className='text-[32px] md:text-[48px] text-center pl-28 lg:text-4xl'>Now Available In</h3>
+                <div className='w-[50%] m-auto border flex flex-col gap-y-[px25] '>
+                    <h3 className='text-[32px] md:text-[48px] text-center pl-2 lg:text-4xl'>Now Available In</h3>
                     <div className="flex flex-col items-center mt-4 text-center">
                         <p className='text-[15px] text-[#383838]'>
                             Not just India anymore! Now available internationally. Catax supports crypto tax
@@ -17,9 +17,9 @@ const Available = () => {
                     </div>
                 </div>
 
-                <div className='grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 items-center justify-center w-[90%] m-auto'>
+                <div className='grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 items-center justify-center w-[70%] lg:w-[90%] m-auto'>
                     <div className='flex flex-col gap-y-[25px]'>
-                        <img className='w-[242px] border ' src="/assets/image1.png" alt="" />
+                        <img className='w-[242px] border] ' src="/assets/image1.png" alt="" />
                         <img className='w-[242px] h-[216]' src="/assets/image2.png" alt="" />
                     </div>
                     <div className='flex flex-col gap-y-[25px]'>

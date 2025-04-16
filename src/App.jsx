@@ -18,6 +18,7 @@ import AccountantsPage from "./pages/AccountantsPage";
 import PartnershipSection from "./components/PartnershipSection";
 import GetStartedSection from "./components/GetStartedSection";
 import Available from "./components/Available";
+// import Features2 from "./components/FeaturesSection2";
 
 
 
