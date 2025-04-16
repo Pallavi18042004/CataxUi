@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
       {/* <img src={catexlogo} alt="Catax Logo" className="h-[26.64px] w-auto" /> */}
-<img src="/assets/catexlogo.png" alt="" className="h-[26.64px] w-auto" />
+<img src="/assets/catexlogo.png" alt="" className=" h-[20px]  sm:h-[26.64px] w-auto" />
 
 
         <div className="md:hidden">
