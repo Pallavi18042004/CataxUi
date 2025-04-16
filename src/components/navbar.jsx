@@ -1,3 +1,5 @@
+// import catexlogo from "../assets/catexlogo.png";
+
 import { useState } from "react";
 
 const Navbar = () => {
@@ -9,7 +11,9 @@ const Navbar = () => {
     <nav className="bg-white  px-6 py-4 w-full z-10 mt-2">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
-        <div className="text-4xl font-extrabold text-[#A64D79]">catax</div>
+      {/* <img src={catexlogo} alt="Catax Logo" className="h-[26.64px] w-auto" /> */}
+<img src="/assets/catexlogo.png" alt="" className=" h-[20px]  sm:h-[26.64px] w-auto" />
+
 
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-[#A64D79] text-2xl focus:outline-none">
@@ -34,7 +38,7 @@ const Navbar = () => {
             <a href="#login" className="text-gray-700 hover:text-[#A64D79] font-medium text-sm">Login</a>
             <a
               href="#register"
-              className="bg-[#A64D79] text-white px-4 py-2 rounded-full hover:bg-purple-800 transition text-sm font-medium"
+              className="bg-[#A64D79] text-white px-4 py-2 rounded-full  transition text-sm font-medium"
             >
               Register Now
             </a>
@@ -56,7 +60,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#register"
-                className="bg-[#A64D79] text-white px-4 py-2 rounded-full hover:bg-purple-800 transition"
+                className="bg-[#A64D79] text-white px-4 py-2 rounded-full  transition"
               >
                 Register Now
               </a>
