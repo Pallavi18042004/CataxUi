@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import MediaSection from "./components/MediaSection";
-import StepsSection  from "./components/StepsSection";
+
 import Feature from "./components/FeaturesSection";
 import StepsSection from "./components/StepsSection";
 import About from "./components/About";

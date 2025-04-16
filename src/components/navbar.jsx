@@ -1,4 +1,4 @@
-import catexlogo from "../assets/catexlogo.png";
+// import catexlogo from "../assets/catexlogo.png";
 
 import { useState } from "react";
 
@@ -11,7 +11,9 @@ const Navbar = () => {
     <nav className="bg-white  px-6 py-4 w-full z-10 mt-2">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
-      <img src={catexlogo} alt="Catax Logo" className="h-[26.64px] w-auto" />
+      {/* <img src={catexlogo} alt="Catax Logo" className="h-[26.64px] w-auto" /> */}
+<img src="/assets/catexlogo.png" alt="" className="h-[26.64px] w-auto" />
+
 
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-[#A64D79] text-2xl focus:outline-none">
