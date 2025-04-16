@@ -11,7 +11,7 @@ const reports = [
 
 const ReportSection = () => {
   return (
-    <section className="bg-gradient-to-r from-[#FED8D8] to-white py-12 px-4 sm:px-6 font-poppins">
+    <section className="bg-gradient-to-r from-[#FED8D8] flex  flex-wrap to-white sm:py-9 md:py-12 px-4 sm:px-6 font-poppins ">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black mb-8 sm:mb-10">
           All The Reports You Need
