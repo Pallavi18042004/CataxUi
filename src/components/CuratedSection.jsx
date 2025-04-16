@@ -40,7 +40,7 @@ const CuratedSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-[#FED8D8] to-white py-20 px-4 sm:px-10 font-poppins text-center">
+    <section className=" py-20 px-4 sm:px-10 font-poppins text-center">
       <h2 className="text-3xl sm:text-5xl font-bold text-black mb-10">
         Curated to cater everyone
       </h2>

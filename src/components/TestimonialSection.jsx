@@ -1,7 +1,7 @@
 import React from "react";
 
 const TestimonialCard = ({ item }) => (
-    <div className="bg-white border border-gray-300 rounded-lg p-4 shadow-sm">
+    <div className=" border border-gray-300 rounded-lg p-4 shadow-sm">
         <div className="flex items-center gap-3 mb-2">
             <img src={item.image} alt={item.title} className="w-10 h-10 rounded-full" />
             <div>

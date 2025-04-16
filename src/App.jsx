@@ -19,6 +19,7 @@ import AccountantsPage from "./pages/AccountantsPage";
 import PartnershipSection from "./components/PartnershipSection";
 import GetStartedSection from "./components/GetStartedSection";
 import Available from "./components/Available";
+import AuroraHeading from "./components/AuroraHeading";
 // import Features2 from "./components/FeaturesSection2";
 
 
@@ -39,13 +40,21 @@ function App() {
               <MediaSection />
               <Feature />
               <About />
+            <div className="bg-gradient-to-r from-[#FED8D8] to-white">
               <StepsSection />
               <ReportSection />
               <CuratedSection />
+             
               <Web3Section />
+              </div>
+              <AuroraHeading/>
+              <div className="bg-gradient-to-r from-[#DCECFFCC] to-white">
+
               <PartnershipSection />
               <Testimonials />
               <Available />
+              </div>
+             
               <GetStartedSection />
               <Footer />
             </div>

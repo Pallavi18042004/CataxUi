@@ -14,7 +14,7 @@ const Web3Section = () => {
   const secondHalf = leftButtons.slice(3);
 
   return (
-    <section className="bg-gradient-to-r from-pink-50 to-blue-50 py-7 sm:10 md:20 px-6 font-sans lg:h-screen">
+    <section className=" py-7 sm:10 md:20 px-6 font-sans lg:h-screen">
       <div className="max-w-7xl mx-auto text-center mb-14">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
           Trusted by leading web3 investors
