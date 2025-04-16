@@ -18,7 +18,7 @@ const PartnershipSection = () => {
               key={i}
               className="h-[70px] w-[147px] sm:h-[80px] sm:w-[167px] md:h-[90px] md:w-[177px]  rounded-full bg-white  border border-gray-300 flex items-center justify-center shadow"
             >
-              
+
             </div>
           ))}
         </div>

@@ -7,8 +7,8 @@ import Feature2 from "./FeaturesSection2";
 const Feature = () => {
     return (<>
 
-        <div className="container mt-36 mx-auto  max-w-5xl px-4 lg:hidden">
-            <div className="heading text-[32px] md:text-[48px] text-center font-bold mb-12">
+        <div className="container mt-24 mx-auto  max-w-5xl px-4 lg:hidden">
+            <div className="heading text-[24px] md:text-[48px] text-center font-bold mb-12">
                 Our Exciting Features
             </div>
 
@@ -23,7 +23,7 @@ const Feature = () => {
                     "2-Min Tax Filing Report",
                     "Tax Filing Assistant"
                 ].map((feature, index) => (
-                    <div key={index} className="flex border-2 p-2 h-14 w-60 rounded-md items-center ">
+                    <div key={index} className="flex border-2 hover:shadow-md p-2 h-14 w-60 rounded-md items-center ">
                         <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#DCECFF] to-[#FFE0E0] flex justify-center items-center mr-4">
                             <MdOutlineCheck />
                         </div>
