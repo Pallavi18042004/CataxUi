@@ -16,7 +16,7 @@ const MediaSection = () => {
           <img src={coindesk} alt="Coindesk" className="h-10 lg:h-14  object-contain grayscale hover:grayscale-0 transition hover:scale-125" />
           <img src={finanacialexpress} alt="Financial Express" className="h-10 lg:h-14  object-contain grayscale hover:grayscale-0 transition hover:scale-125" />
           <img src={outlook} alt="Outlook" className="h-10 lg:h-14  object-contain grayscale hover:grayscale-0 transition hover:scale-125" />
-         <img src="./assets/toi.png" alt=""  className="h-10 lg:h-14  object-contain grayscale hover:grayscale-0 transition hover:scale-125"/>
+          <img src="./assets/toi.png" alt="" className="h-10 lg:h-14  object-contain grayscale hover:grayscale-0 transition hover:scale-125" />
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ const About = () => {
     return (
         <>
             <div
-                className="w-full h-[260px] mt-[100px] text-white bg-cover bg-center relative flex items-center justify-center"
+                className="w-full h-[260px] mt-[180px] text-white bg-cover bg-center relative flex items-center justify-center"
                 style={{ backgroundImage: `url(${AboutPic})` }}
             >
                 <div className='grid grid-cols-2  gap-x-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-24 m-auto items-center  '>

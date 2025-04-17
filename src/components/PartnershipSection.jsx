@@ -4,10 +4,10 @@ const PartnershipSection = () => {
   return (
     <section className=" py-20 px-6 text-center font-sans md:h-screen ">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
+        <h2 className="text-[24px] sm:text-[48px] md:text-[48px] font-medium text-black">
           Partnership & Integrations
         </h2>
-        <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-5 mb-10 max-w-2xl mx-auto">
           We've teamed up with industry-leading exchanges, wallets, and platforms to offer <br />
           seamless integrations. Explore the powerful integrations we’ve built for you.
         </p>

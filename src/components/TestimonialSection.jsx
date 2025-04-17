@@ -25,7 +25,7 @@ const TestimonialSection = ({ data }) => {
     return (
         <section className="max-w-6xl mx-auto py-12 px-4">
             <div className="text-center mb-10">
-                <p className="font-semibold text-3xl lg:text-4xl">Testimonials</p>
+                <p className="font-medium text-[24px] sm:text-[24px] lg:text-[48px]">Testimonials</p>
                 <p className="text-base text-gray-600 mt-2">
                     Why do people trust us with their crypto taxes? Check out their testimonials <br /> and see what made them choose us.
                 </p>

@@ -15,7 +15,7 @@ const HeroSection = () => {
       </p>
 
       <div className="relative w-full mt-14">
-        <button className="absolute left-1/2 -top-6 transform -translate-x-1/2 bg-[#A64D79] text-white gap-2  text-xs sm:text-base  rounded-full px-5 py-3 font-semibold transition flex items-center shadow-lg z-10">
+        <button className="absolute left-1/2 -top-6 transform -translate-x-1/2 bg-[#A64D79] text-white gap-2  text-xs sm:text-base  rounded-full px-5 py-3 font-semibold transition flex items-center  z-10">
           Calculate Now <IoIosArrowRoundForward size={29} className="-mb-1" />
         </button>
 
