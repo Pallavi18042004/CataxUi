@@ -1,4 +1,5 @@
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import { Link } from "react-router-dom";
 
 const CuratedSection = () => {
@@ -40,11 +41,11 @@ const CuratedSection = () => {
   ];
 
   return (
-    <section className=" py-20 px-4 sm:px-10 font-poppins text-center">
-      <h2 className="text-3xl sm:text-5xl font-bold text-black mb-10">
+    <section className=" py-20 mt-[50px] px-4 sm:px-10 font-poppins text-center">
+      <h2 className="text-3xl sm:text-5xl font-medium text-black mb-10">
         Curated to cater everyone
       </h2>
-      <p className="max-w-2xl mx-auto text-gray-600 mb-12">
+      <p className="max-w-2xl mx-auto  text-gray-600 mb-12">
         Kryptos provides tailored tax solutions for everyone, from individual
         investors to enterprises and accountants. Streamline your crypto tax
         needs with precision and ease.
@@ -53,8 +54,8 @@ const CuratedSection = () => {
       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((item, index) => (
           <Link to={item.link} key={index} className="h-full group">
-           <div className="w-full h-[250px] sm:h-[285px] md:h-[335px] bg-white border border-pink-300 rounded-xl p-4 sm:p-6 transition-colors duration-300 flex flex-col justify-between cursor-pointer group-hover:bg-gradient-to-tr group-hover:from-[#f4eeeeee] group-hover:to-white">
-
+            <div className="w-full h-[270px] sm:h-[285px] md:h-[335px] bg-white border border-pink-300 rounded-xl p-4 sm:p-6  flex flex-col justify-between cursor-pointer ">
+              {/* transition-colors duration-300 group-hover:bg-gradient-to-tr group-hover:from-[#f4eeeeee] group-hover:to-white */}
               <div>
                 <div className="text-2xl flex justify-center items-center text-pink-400 mb-4">
                   {item.icon}
@@ -62,9 +63,9 @@ const CuratedSection = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-base sm:text-lg mb-4">{item.description}</p>
               </div>
-              <div className="w-full flex justify-end mt-auto text-gray-600">
-  <IoIosArrowRoundForward className="text-2xl sm:text-3xl md:text-4xl" />
-</div>
+              <div className="w-full flex justify-end mt-auto text-[#808080]">
+                <FaArrowRightLong className="text-sm sm:text-lg md:text-lg" />
+              </div>
 
             </div>
           </Link>

@@ -34,30 +34,30 @@ function App() {
 
         <Route path="/" element={
           <>
-            <div className="bg-gradient-to-r from-[#FED8D8] to-white">
-              <Navbar />
-              <HeroSection />
-              <MediaSection />
-              <Feature />
-              <About />
-            <div className="bg-gradient-to-r from-[#FED8D8] to-white">
-              <StepsSection />
-              <ReportSection />
-              <CuratedSection />
-             
-              <Web3Section />
-              </div>
-              <AuroraHeading/>
-              <div className="bg-gradient-to-r from-[#DCECFFCC] to-white">
 
-              <PartnershipSection />
-              <Testimonials />
-              <Available />
-              </div>
-             
-              <GetStartedSection />
-              <Footer />
-            </div>
+            <Navbar />
+            <HeroSection />
+            <MediaSection />
+            <Feature />
+            <About />
+
+            <StepsSection />
+            <ReportSection />
+            <CuratedSection />
+
+            <Web3Section />
+
+            <AuroraHeading />
+
+
+            <PartnershipSection />
+            <Testimonials />
+            <Available />
+
+
+            <GetStartedSection />
+            <Footer />
+
           </>
         } />
 

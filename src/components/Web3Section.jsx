@@ -14,9 +14,9 @@ const Web3Section = () => {
   const secondHalf = leftButtons.slice(3);
 
   return (
-    <section className=" py-7  px-6 font-sans mb-16">
+    <section className=" py-7 mt-[70px] px-6 font-sans mb-16">
       <div className="max-w-7xl mx-auto text-center mb-14">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
+        <h2 className="text-[24px] sm:text-[24px] md:text-[48px] font- text-black mb-5">
           Trusted by leading web3 investors
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">

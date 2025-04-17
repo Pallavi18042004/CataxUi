@@ -11,9 +11,9 @@ const reports = [
 
 const ReportSection = () => {
   return (
-    <section className="b flex  flex-wrap  sm:py-9 md:py-12 px-4 sm:px-6 font-poppins ">
+    <section className="mt-[100px] flex  flex-wrap  sm:py-9 md:py-12 px-4 sm:px-6 font-poppins ">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black mb-8 sm:mb-10">
+        <h2 className="text-[24px] sm:text-[24px] md:text-[48px] font-medium  text-black mb-8 sm:mb-10">
           All The Reports You Need
         </h2>
 

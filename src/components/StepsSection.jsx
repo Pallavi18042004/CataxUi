@@ -26,13 +26,13 @@ const StepsSection = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className=" py-16 px-4 font-poppins">
+    <section className=" mt-[120px] py-16 px-4 font-poppins">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-xl sm:text-2xl md:text-5xl font-semibold text-black">
+          <h2 className="text-[24px] sm:text-[48px] md:text-[48px] font-medium text-black">
             Steps to Calculate Taxes
           </h2>
-          <p className="text-gray-600 mt-5 sm:8  mx-auto text-xs sm:text-base md:text-base max-w-lg font-normal">
+          <p className="text-gray-600 mt-4 sm:8  mx-auto text-xs sm:text-base md:text-base max-w-lg font-normal">
             In just four simple steps, get your crypto tax report ready.
             Connect, upload, review, and download in minutes!
           </p>
@@ -49,8 +49,8 @@ const StepsSection = () => {
                 >
                   <div
                     className={`flex items-center  gap-2 space-x-2 font-medium text-lg ${activeStep === index
-                        ? "text-[#A64D79]"
-                        : "text-gray-700"
+                      ? "text-[#A64D79]"
+                      : "text-gray-700"
                       }`}
                   >
                     {activeStep === index && <FaArrowRight />}
@@ -58,7 +58,7 @@ const StepsSection = () => {
                   </div>
 
                   <span
-                    className={`h-[1.5px] bg-[#383838] inline-block transition-all duration-300 absolute bottom-0 left-0 ${activeStep === index ? "w-[65%] " : "w-0"
+                    className={`h-[1.5px] bg-[rgba(166,77,122,1)] inline-block transition-all duration-300 absolute bottom-0 left-0 ${activeStep === index ? "w-[65%] " : "w-0"
                       }`}
                   ></span>
                 </div>
@@ -73,34 +73,34 @@ const StepsSection = () => {
           </div>
 
           <div className="flex-1">
-  <div className=" mt-4 sm:mt-4 lg:mt-0  border border-[#A64D79] rounded-md  w-[300px] md:w-[616px] md:h-[auto] sm:w-[316px] sm:h-[300px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)]">
-    {stepsData[activeStep].videoUrl.includes("youtube") ? (
-      <iframe
-        key={stepsData[activeStep].videoUrl}
-        width="100%"
-        height="100%"
-        className="rounded-md"
-        src={stepsData[activeStep].videoUrl.replace("/shorts/", "/embed/")}
-        title="YouTube video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    ) : (
-      <video
-        key={stepsData[activeStep].videoUrl}
-        controls
-        autoPlay
-        className="w-full h-auto object-cover rounded-md"
-      >
-        <source
-          src={stepsData[activeStep].videoUrl}
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-    )}
-  </div>
+            <div className=" mt-4 sm:mt-4 lg:mt-0  border border-[#A64D79] rounded-md  w-[300px] md:w-[616px] md:h-[auto] sm:w-[316px] sm:h-[300px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)]">
+              {stepsData[activeStep].videoUrl.includes("youtube") ? (
+                <iframe
+                  key={stepsData[activeStep].videoUrl}
+                  width="100%"
+                  height="100%"
+                  className="rounded-md"
+                  src={stepsData[activeStep].videoUrl.replace("/shorts/", "/embed/")}
+                  title="YouTube video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <video
+                  key={stepsData[activeStep].videoUrl}
+                  controls
+                  autoPlay
+                  className="w-full h-auto object-cover rounded-md"
+                >
+                  <source
+                    src={stepsData[activeStep].videoUrl}
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              )}
+            </div>
 
 
           </div>
