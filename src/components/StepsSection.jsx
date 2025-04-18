@@ -6,18 +6,22 @@ const stepsData = [
   {
     label: " 1. Select exchange/wallet",
     videoUrl: "https://www.youtube.com/shorts/l2De8fn0lSI",
+    subtitle: "Choose your exchange or wallet from our wide range of supported integrations. Our seamless integration makes it easy to get started.",
   },
   {
     label: " 2. Upload transaction history  ",
     videoUrl: "https://www.youtube.com/shorts/7PZnoUzL8BQ",
+    subtitle: "Upload your transaction history as a CSV/Excel file or provide your API key to allow us to fetch your transactions seamlessly",
   },
   {
     label: "3. Review Transactions",
     videoUrl: "https://www.youtube.com/shorts/U_Kcc4AZgL4",
+    subtitle: "Review transactions for any missing cost basis (COA) and reconcile all deposits and withdrawals for precise tax calculations.",
   },
   {
     label: "4. Download Report",
     videoUrl: "https://www.youtube.com/shorts/ooP23-jgCYY",
+    subtitle: "Select a report that fits your needs, such as a business report or a capital gains report, and download it instantly.",
   },
 ];
 
@@ -66,9 +70,7 @@ const StepsSection = () => {
             </div>
 
             <p className="text-gray-600 text-sm md:text-base max-w-xs font-medium mt-[50px] md:mt-[80px] lg:mt-[110px] ">
-              Choose your exchange or wallet from our wide range of supported
-              integration. Our seamless integration makes it easy to get
-              started.
+              {stepsData[activeStep].subtitle}
             </p>
           </div>
 
