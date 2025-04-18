@@ -19,7 +19,7 @@ const TestimonialCard = ({ item }) => (
     </div>
 );
 
-const TestimonialSection = ({ data }) => {
+const TestimonialSection = ({ data, isShow }) => {
     const allCols = [data.first_col_data, data.second_col_data, data.third_col_data];
 
     return (
@@ -31,10 +31,10 @@ const TestimonialSection = ({ data }) => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {allCols.map((col, i) => (
                     <div key={i} className="flex flex-col gap-6">
-                        {col.map((item, idx) => (
+                        {(isShow ? col : col.slice(0, 2)).map((item, idx) => (
                             <TestimonialCard key={idx} item={item} />
                         ))}
                     </div>

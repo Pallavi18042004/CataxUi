@@ -4,7 +4,7 @@ import React from 'react';
 const Available = () => {
     return (
         <>
-            <div className='flex flex-col gap-y-[50px] mt-[150px]'>
+            <div id='countries' className='flex flex-col gap-y-[50px] mt-[150px]'>
                 <div className='w-[90%] sm:w-[50%] m-auto flex flex-col gap-y-[px25] '>
                     <h3 className='text-[24px] sm:text-[48px] md:text-[48px] font-medium text-center pl-2 '>Now Available In</h3>
                     <div className="flex flex-col items-center mt-5 text-center">
