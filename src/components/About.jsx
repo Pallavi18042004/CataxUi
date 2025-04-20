@@ -3,6 +3,7 @@ import AboutPic from '/assets/AboutPic.jpeg';
 const About = () => {
     return (
         <>
+
             <div
                 className="w-full h-[260px] mt-[180px] text-white bg-cover bg-center relative flex items-center justify-center"
                 style={{ backgroundImage: `url(${AboutPic})` }}

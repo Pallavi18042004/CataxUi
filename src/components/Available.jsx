@@ -17,7 +17,7 @@ const Available = () => {
                     </div>
                 </div>
 
-                <div className='grid   lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 justify-center w-[70%] lg:w-[90%] m-auto'>
+                <div className='grid gap-y-[25px] lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 justify-center w-[70%] lg:w-[90%] m-auto'>
                     <div className='flex flex-col items-center gap-y-[25px]'>
                         <img className='w-[242px] border] ' src="/assets/image1.png" alt="" />
                         <img className='w-[242px] h-[216]' src="/assets/image2.png" alt="" />

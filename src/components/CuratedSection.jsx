@@ -54,7 +54,7 @@ const CuratedSection = () => {
       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((item, index) => (
           <Link to={item.link} key={index} className="h-full group">
-            <div className="w-full h-[270px] sm:h-[285px] md:h-[335px] bg-white border border-pink-300 rounded-xl p-4 sm:p-6  flex flex-col justify-between cursor-pointer ">
+            <div className="w-full h-full sm:h-full md:h-full bg-white border border-pink-300 rounded-xl p-4 sm:p-6  flex flex-col justify-between cursor-pointer ">
               {/* transition-colors duration-300 group-hover:bg-gradient-to-tr group-hover:from-[#f4eeeeee] group-hover:to-white */}
               <div>
                 <div className="text-2xl flex justify-center items-center text-pink-400 mb-4">

@@ -62,7 +62,7 @@ const StepsSection = () => {
                   </div>
 
                   <span
-                    className={`h-[1.5px] bg-[rgba(166,77,122,1)] inline-block transition-all duration-300 absolute bottom-0 left-0 ${activeStep === index ? "w-[65%] " : "w-0"
+                    className={`h-[1px] bg-[rgba(166,77,122,1)] inline-block transition-all duration-300 absolute bottom-0 left-0 ${activeStep === index ? "w-[65%] " : "w-0"
                       }`}
                   ></span>
                 </div>
@@ -75,7 +75,7 @@ const StepsSection = () => {
           </div>
 
           <div className="flex-1">
-            <div className=" mt-4 sm:mt-4 lg:mt-0  border border-[#A64D79] rounded-md  w-[300px] md:w-[616px] md:h-[auto] sm:w-[316px] sm:h-[300px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)]">
+            <div className=" mt-4 sm:mt-4 lg:mt-0  border border-[#A64D79] rounded-md  w-auto md:w-auto md:h-[auto] sm:w-auto sm:h-[300px] aspect-video flex items-center justify-center shadow-[inset_0_4px_6px_rgba(0,0,0,0.1)]">
               {stepsData[activeStep].videoUrl.includes("youtube") ? (
                 <iframe
                   key={stepsData[activeStep].videoUrl}
