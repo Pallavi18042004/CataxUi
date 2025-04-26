@@ -255,7 +255,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden mt-4">
-          <ul className="flex flex-col space-y-3 text-sm font-medium text-center">
+          <ul className="flex flex-col space-y-5 text-sm font-medium text-center">
             {NAV_LINKS.map(({ href, label }, index) => (
               <li key={index}>
                 <a
