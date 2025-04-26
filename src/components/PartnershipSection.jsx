@@ -26,7 +26,7 @@ const PartnershipSection = () => {
             {[...logos, ...logos, ...logos].map((logo, i) => (
               <div
                 key={`left-${i}`}
-                className="h-[96px] w-[218px] rounded-full bg-white border border-gray-300 flex items-center justify-center shadow"
+                className="h-[94px] w-[210px] rounded-full bg-white border border-gray-300 flex items-center justify-center shadow"
               >
                 <img src={logo} alt={`logo-${i}`} className="h-12 object-contain" />
               </div>
@@ -40,7 +40,7 @@ const PartnershipSection = () => {
             {[...logos, ...logos, ...logos].slice().reverse().map((logo, i) => (
               <div
                 key={`right-${i}`}
-                className="h-[96px] w-[218px] rounded-full bg-white border border-gray-300 flex items-center justify-center shadow"
+                className="h-[94px] w-[210px] rounded-full bg-white border border-gray-300 flex items-center justify-center shadow"
               >
                 <img src={logo} alt={`logo-${i}`} className="h-12 object-contain" />
               </div>

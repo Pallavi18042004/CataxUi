@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const HeroSection = () => {
   return (
     <section className="bg-white text-center sm:py-10  relative overflow-hidden">
-      <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-8">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-8">
         Come. Calculate. Chill.
       </h1>
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
         <img
           src="/assets/catex.png"
           alt="Image of India"
-          className="w-full max-w-screen sm:max-w-screen lg:max-w-screen h-auto object-cover mx-auto opacity-40"
+          className="w-full max-w-screen sm:max-w-screen  lg:max-w-screen h-auto object-cover mx-auto opacity-40"
         />
       </div>
     </section>
