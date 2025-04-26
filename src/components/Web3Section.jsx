@@ -21,16 +21,15 @@ const Web3Section = () => {
           Trusted by leading web3 investors
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+          aspernatur <br />
           quibusdam delectus maxime,
         </p>
       </div>
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-
         {/* Left side with 3 animated rows */}
-        <div className="flex flex-col gap-6 w-full md:w-1/2">
-
+        <div className="flex flex-col gap-6 w-full md:w-1/2 xl:w-[60%]">
           {/* Row 1 - Slide Left */}
           <div className="overflow-hidden">
             <div className="flex w-max gap-4 animate-slideLeft">
@@ -79,13 +78,13 @@ const Web3Section = () => {
 
         {/* Right side content */}
         <div className="max-w-md text-center md:text-left">
-          <h3 className="text-3xl sm:text-4xl font-serif mb-4 text-black">
+          <h3 className="text-3xl sm:text-4xl font-semibold mb-4 text-black">
             Learn while you build
           </h3>
           <p className="text-gray-600 mb-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ipsa aspernatur
-            accusantium provident quos! Ducimus quas cumque similique minus doloremque
-            numquam alias enim itaque.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ipsa
+            aspernatur accusantium provident quos! Ducimus quas cumque similique
+            minus doloremque numquam alias enim itaque.
           </p>
           <a href="#" className="text-blue-600 font-medium hover:underline">
             Learn more about Tutorials

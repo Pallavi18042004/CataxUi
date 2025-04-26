@@ -1,5 +1,4 @@
 import React from "react";
-import catex from "/assets/catex.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const HeroSection = () => {
@@ -20,7 +19,7 @@ const HeroSection = () => {
         </button>
 
         <img
-          src={catex}
+          src="/assets/catex.png"
           alt="Image of India"
           className="w-full max-w-screen sm:max-w-screen lg:max-w-screen h-auto object-cover mx-auto opacity-40"
         />
