@@ -17,11 +17,11 @@ const ReportSection = () => {
           All The Reports You Need
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 md:gap-6 mb-6">
+        <div className=" flex flex-wrap sm:grid sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 md:gap-6 mb-6">
           {reports.map((report, index) => (
             <button
               key={index}
-              className="flex items-center justify-between px-4 py-3 w-[243px] h-[54px]  bg-gradient-to-r from-[#DCECFF] to-[#FFFFFF]
+              className="flex items-center justify-between mx-auto px-4 py-3 w-[243px] h-[54px]  bg-gradient-to-r from-[#DCECFF] to-[#FFFFFF]
                  text-xs sm:text-base text-gray-800 rounded-md transition-all border border-gray-300 "
             >
               {report}
@@ -29,7 +29,6 @@ const ReportSection = () => {
             </button>
           ))}
         </div>
-
       </div>
     </section>
   );
