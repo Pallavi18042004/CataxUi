@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const TestimonialCard = ({ item }) => (
-    <div className=" border border-gray-300 rounded-lg p-4 shadow-sm">
+    <div className="border border-gray-300 rounded-lg p-4 shadow-sm">
         <div className="flex items-center gap-3 mb-2">
             <img src={item.image} alt={item.title} className="w-10 h-10 rounded-full" />
             <div>
@@ -22,6 +22,19 @@ const TestimonialCard = ({ item }) => (
 const TestimonialSection = ({ data, isShow }) => {
     const allCols = [data.first_col_data, data.second_col_data, data.third_col_data];
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+
+        handleResize(); // Initial check
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <section className="max-w-6xl mx-auto py-12 px-4">
             <div className="text-center mb-10">
@@ -34,14 +47,13 @@ const TestimonialSection = ({ data, isShow }) => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {allCols.map((col, i) => (
                     <div key={i} className="flex flex-col gap-6">
-                        {(isShow ? col : col.slice(0, 2)).map((item, idx) => (
+                        {(isShow ? col : (isMobile ? col.slice(0, 1) : col.slice(0, 2))).map((item, idx) => (
                             <TestimonialCard key={idx} item={item} />
                         ))}
                     </div>
                 ))}
             </div>
         </section>
-
     );
 };
 
