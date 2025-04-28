@@ -2,7 +2,6 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import MediaSection from "./components/MediaSection";
-import Navbar from "./components/Navbar";
 import About from "./components/About";
 import CuratedSection from "./components/CuratedSection";
 import StepsSection from "./components/StepsSection";
@@ -17,6 +16,10 @@ import Web3Section from "./components/Web3Section";
 import AccountantsPage from "./pages/AccountantsPage";
 import EnterprisesPage from "./pages/EnterprisesPage";
 import IndividualsPage from "./pages/IndividualsPage";
+import Navbar from "./components/navbar";
+import AboutUs from "./pages/AboutPage";
+import QuoteSection from "./pages/QuoteSection";
+import WhatDrivesUs from "./pages/WhatDrivesUs";
 // import Features2 from "./components/FeaturesSection2";
 
 function App() {
@@ -63,6 +66,23 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/AboutPage"
+          element={
+            <>
+              <Navbar />
+              <AboutUs />
+              <QuoteSection/>
+              <WhatDrivesUs/>
+              <GetStartedSection/>
+              <Footer />
+            </>
+          }
+        />
+        
+        
+       
+        
         <Route
           path="/accountants"
           element={
