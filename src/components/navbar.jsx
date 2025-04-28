@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
+  { href: "/AboutPage", label: "About" },
   { href: "#why-catax", label: "Why Catax?" },
   { href: "#integration", label: "Integration" },
   { href: "#calculate", label: "Calculate" },
