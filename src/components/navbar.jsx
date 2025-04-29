@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-white px-6 py-4 w-full z-10 mt-2 shadow-md ${
+      className={`bg-white px-6  py-4 w-full z-10 mt-2 shadow-md ${
         menuOpen ? "border-b-[2px] border-gray-200" : ""
       }`}
     >
