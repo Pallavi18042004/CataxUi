@@ -20,6 +20,7 @@ import Navbar from "./components/navbar";
 import AboutUs from "./pages/AboutPage";
 import QuoteSection from "./pages/QuoteSection";
 import WhatDrivesUs from "./pages/WhatDrivesUs";
+import Peoples from "./pages/Peoples";
 // import Features2 from "./components/FeaturesSection2";
 
 function App() {
@@ -74,6 +75,8 @@ function App() {
               <AboutUs />
               <QuoteSection/>
               <WhatDrivesUs/>
+              <Peoples/>
+              <About/>
               <GetStartedSection/>
               <Footer />
             </>

@@ -41,7 +41,7 @@ function WhatDrivesUs() {
             {drives.map((item, index) => (
               <div key={index} className="text-center  space-y-3 flex  flex-col items-center justify-center mt-12">
                 
-                <img className="w-[43px] h-[43px]" src={item.image} alt="" />
+                <img className="w-[42px] h-[42px]" src={item.image} alt="" />
                 
                 <h3 className="text-xl  font-semibold ">{item.title}</h3>
                 <p className="text-gray-600 text-base max-w-56">{item.description}</p>
